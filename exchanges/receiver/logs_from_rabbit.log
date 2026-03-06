@@ -1,0 +1,5 @@
+2026/01/23 10:00:08  [*] Waiting for messages. To exit press CTRL+C
+2026/01/23 10:00:36 Received a message: Hello mr Rabbit
+2026/01/23 10:00:48 Received a message: someone hit API
+2026/01/23 10:04:08 Received a message: are you sure you receive a message?
+signal: interrupt
