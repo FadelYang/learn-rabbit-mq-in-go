@@ -1,0 +1,5 @@
+2026/03/17 02:45:58 Binding queue amq.gen-dMsLGMJ_u50X6cK60AS00A to exchange logs_direct with routing key warning
+2026/03/17 02:45:58 Binding queue amq.gen-dMsLGMJ_u50X6cK60AS00A to exchange logs_direct with routing key error
+2026/03/17 02:45:58  [*] Waiting for logs. To exit press CTRL+C
+2026/03/17 02:47:26 [x] Run. Run. Or it will explode.
+2026/03/17 02:48:39 [x] 404 Item Not Found
