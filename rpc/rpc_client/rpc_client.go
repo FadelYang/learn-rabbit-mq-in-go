@@ -44,7 +44,7 @@ func fibonacciRPC(n int) (res int, err error) {
 		false, // durable
 		false, // delete when unused
 		true,  // exclusive
-		true,  // noWait
+		false, // noWait
 		nil,   // arguments
 	)
 	failOnError(err, "Failed to declare a queue")
