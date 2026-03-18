@@ -65,11 +65,11 @@ func main() {
 	var forever chan struct{}
 
 	go func() {
-		ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
-		defer cancel()
 		for d := range msgs {
 			n, err := strconv.Atoi(string(d.Body))
 			failOnError(err, "Failed to convert body to integer")
+
+			ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 
 			log.Printf(" [.] fib(%d)", n)
 			response := fib(n)
@@ -86,6 +86,7 @@ func main() {
 					Body:          []byte(strconv.Itoa(response)),
 				},
 			)
+			cancel()
 			failOnError(err, "Failed to publish a message")
 
 			d.Ack(false)
